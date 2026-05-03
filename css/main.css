@@ -1,4 +1,5 @@
 ﻿  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { width: 100%; height: 100%; overflow-x: hidden; }
 
   :root {
     --c-cyan:       #0066cc;
@@ -29,21 +30,34 @@
     margin: 0;
     overflow-x: hidden;
     overflow-y: auto;
-    background: #eeede8;
+    background: #050505;
     font-family: var(--font-ui);
     color: #1a1a2e;
   }
 
-  canvas { display: block; z-index: 1; position: fixed; top: 0; left: 0; width: 100% !important; height: 100% !important; }
-  #burst-canvas { z-index: 2; }
-  #scanline { z-index: 3; }
-
-  #neural-canvas {
+  /* All canvases: fixed full-screen by default */
+  canvas {
+    display: block;
     position: fixed;
     inset: 0;
-    z-index: 4;
-    pointer-events: none;
+    width:  100vw !important;
+    height: 100vh !important;
   }
+
+  /* Three.js canvas — deepest layer, full bleed background */
+  #orb-canvas {
+    position: fixed;
+    inset: 0;
+    width:  100vw !important;
+    height: 100vh !important;
+    z-index: 0;
+    display: block;
+    background: #050505;
+  }
+
+  #burst-canvas  { z-index: 2; pointer-events: none; }
+  #scanline      { z-index: 3; }
+  #neural-canvas { position: fixed; inset: 0; z-index: 4; pointer-events: none; }
 
   .hud-corner {
     position: fixed;
@@ -80,12 +94,12 @@
     font-family: var(--font-hud);
     font-size: 10px;
     letter-spacing: 0.18em;
-    color: rgba(20,40,80,0.45);
+    color: rgba(255,255,255,0.28);
     pointer-events: none;
     text-transform: uppercase;
     white-space: nowrap;
   }
-  #status-bar span { color: #0055aa; opacity: 0.8; }
+  #status-bar span { color: rgba(150,185,255,0.70); opacity: 1; }
 
   #section-panel {
     position: fixed;
@@ -291,9 +305,10 @@
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.28em;
-    color: rgba(20,30,60,0.45);
+    color: rgba(255,255,255,0.88);
     text-transform: uppercase;
     margin-bottom: 8px;
+    text-shadow: 0 0 40px rgba(150,185,255,0.22);
   }
   #greeting-line {
     font-family: var(--font-ui);
@@ -301,14 +316,14 @@
     font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1.15;
-    color: rgba(20,30,60,1);
+    color: rgba(255,255,255,0.82);
     white-space: normal;
     max-width: min(600px, 90vw);
     margin: 0 auto;
   }
   #greeting-line span {
     font-weight: 300;
-    color: rgba(20,30,60,0.65);
+    color: rgba(255,255,255,0.52);
     font-size: 42px;
   }
   #greeting-sub {
@@ -316,7 +331,7 @@
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.01em;
-    color: rgba(20,30,60,0.6);
+    color: rgba(255,255,255,0.40);
     text-transform: none;
     margin-top: 10px;
   }
@@ -378,7 +393,7 @@
 
   #boot-overlay {
     position: fixed; inset: 0;
-    background: #eeede8;
+    background: #050505;
     z-index: 100;
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     pointer-events: none;
@@ -416,15 +431,15 @@
   }
   #boot-text {
     font-family: var(--font-hud); font-size: 10px; letter-spacing: 0.22em;
-    color: rgba(20,30,60,0.45); text-transform: uppercase; text-align: center;
+    color: rgba(255,255,255,0.40); text-transform: uppercase; text-align: center;
     line-height: 2.4;
   }
   #boot-bar-wrap {
-    width: 180px; height: 1px; background: rgba(20,30,60,0.1);
+    width: 180px; height: 1px; background: rgba(255,255,255,0.08);
     border-radius: 2px; margin-top: 24px; overflow: hidden;
   }
   #boot-bar {
-    height: 100%; width: 0%; background: rgba(20,30,60,0.35);
+    height: 100%; width: 0%; background: rgba(150,185,255,0.55);
     transition: width 0.1s linear; border-radius: 2px;
   }
 
@@ -438,7 +453,7 @@
     font-family: var(--font-ui);
     font-size: 13px;
     font-weight: 400;
-    color: rgba(20,30,60,0.55);
+    color: rgba(255,255,255,0.44);
   }
   #avail-dot {
     width: 8px; height: 8px;
@@ -453,13 +468,13 @@
     50%       { box-shadow: 0 0 0 6px rgba(34,197,94,0.08); }
   }
   #avail-email {
-    color: rgba(20,30,60,0.75);
+    color: rgba(170,200,255,0.80);
     font-weight: 500;
     text-decoration: none;
-    border-bottom: 1px solid rgba(20,30,60,0.2);
+    border-bottom: 1px solid rgba(170,200,255,0.25);
     transition: color 0.15s, border-color 0.15s;
   }
-  #avail-email:hover { color: rgba(20,30,60,1); border-color: rgba(20,30,60,0.6); }
+  #avail-email:hover { color: rgba(210,225,255,1); border-color: rgba(210,225,255,0.55); }
 
   /* ── Landing project cards — below nav pill ── */
   #landing-cards {
@@ -485,7 +500,7 @@
     font-size: 8px;
     letter-spacing: 0.22em;
     text-transform: uppercase;
-    color: rgba(20,30,60,0.3);
+    color: rgba(255,255,255,0.22);
     text-align: center;
     margin-bottom: 10px;
   }
@@ -571,6 +586,10 @@
     font-weight: 300;
     color: rgba(20,30,60,0.5);
     line-height: 1.5;
+  }
+  /* Tablet: 2-column project grid */
+  @media (min-width: 601px) and (max-width: 1023px) {
+    #landing-cards-grid { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 600px) {
     #landing-cards { display: none; }
@@ -769,12 +788,6 @@
     #status-bar { display: none; }
     #section-panel { display: none; }
     #section-overlay { display: none; }
-
-    /* Orb: smaller hero, still animating */
-    #orb-canvas, canvas {
-      max-width: 280px !important;
-      max-height: 280px !important;
-    }
 
     /* Greeting: centered below orb */
     #greeting {
@@ -1513,13 +1526,7 @@
   /* ═══════════════════════════════════════
      THREE.JS ORB CANVAS
   ═══════════════════════════════════════ */
-  #orb-canvas {
-    position: fixed;
-    inset: 0;
-    width:  100% !important;
-    height: 100% !important;
-    z-index: 0;
-  }
+  /* #orb-canvas is defined at the top of this file */
 
   /* ═══════════════════════════════════════
      RADIAL ORB MENU  (mobile only, ≤768px)
