@@ -1785,5 +1785,13 @@
   /* ── Small screen: hide desktop nav, show bottom nav ── */
   @media (max-width: 600px) {
     #desktop-nav { display: none !important; }
+    #hamburger-btn {
+      width: 56px;
+      height: 56px;
+      top: 14px;
+      right: 14px;
+      border-radius: 14px;
+    }
+    .hbg-bar { width: 24px; }
   }
 
