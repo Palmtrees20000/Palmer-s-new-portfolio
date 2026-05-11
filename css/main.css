@@ -1223,15 +1223,15 @@
   /* Stat boxes */
   .stat-row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
     margin-top: 8px;
   }
   .stat-box {
     background: rgba(20,30,60,0.04);
     border: 1px solid rgba(20,30,60,0.08);
     border-radius: 10px;
-    padding: 16px 14px;
+    padding: 24px 20px;
     text-align: center;
   }
   .stat-box--accent { background: rgba(0,60,120,0.07); border-color: rgba(0,60,120,0.18); }
@@ -1247,7 +1247,7 @@
   @media (max-width: 720px) {
     .case-layout { grid-template-columns: 1fr; }
     .case-sidebar { position: static; }
-    .stat-row { grid-template-columns: repeat(2, 1fr); }
+    .stat-row { grid-template-columns: 1fr; }
   }
 
   /* Featured card badge */
