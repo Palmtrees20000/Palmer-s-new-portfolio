@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Palmer — Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -898,6 +901,31 @@
 
 <!-- Neural canvas -->
 
+<script>
+(function(){
+  var IDLE_LIMIT = 30 * 60 * 1000; // 30 minutes
+  var hiddenAt = null;
+
+  function isInitialized() {
+    var canvas = document.getElementById('neural-canvas');
+    var root   = document.getElementById('root');
+    // Healthy if canvas exists and root is already gone (loader finished)
+    return canvas && !root;
+  }
+
+  document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'hidden') {
+      hiddenAt = Date.now();
+    } else if (document.visibilityState === 'visible') {
+      var elapsed = hiddenAt ? Date.now() - hiddenAt : 0;
+      if (elapsed > IDLE_LIMIT || !isInitialized()) {
+        window.location.reload();
+      }
+      hiddenAt = null;
+    }
+  });
+})();
+</script>
 <script>
 (function(){
   var r = document.getElementById('root');
