@@ -136,15 +136,24 @@ function LinesAndDotsLoader({ onDone }) {
 function runBoot() {
   const rootEl = document.getElementById('root');
   if (!rootEl) return;
-  const reactRoot = createRoot(rootEl);
-  reactRoot.render(h(LinesAndDotsLoader, {
-    onDone: () => {
-      rootEl.style.transition = 'opacity 1.4s ease';
-      rootEl.style.opacity    = '0';
-      rootEl.style.pointerEvents = 'none';
-      setTimeout(() => { reactRoot.unmount(); rootEl.remove(); }, 1400);
-    }
-  }));
+  const dismiss = (fast) => {
+    try { clearTimeout(window.__rootFailsafe); } catch(_) {}
+    rootEl.style.transition = `opacity ${fast ? 0.4 : 1.4}s ease`;
+    rootEl.style.opacity = '0';
+    rootEl.style.pointerEvents = 'none';
+  };
+  try {
+    const reactRoot = createRoot(rootEl);
+    reactRoot.render(h(LinesAndDotsLoader, {
+      onDone: () => {
+        dismiss(false);
+        setTimeout(() => { try { reactRoot.unmount(); rootEl.remove(); } catch(_) {} }, 1400);
+      }
+    }));
+  } catch(_) {
+    dismiss(true);
+    setTimeout(() => { try { rootEl.remove(); } catch(_) {} }, 400);
+  }
 }
 runBoot();
 

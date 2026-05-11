@@ -898,6 +898,18 @@
 
 <!-- Neural canvas -->
 
+<script>
+(function(){
+  var r = document.getElementById('root');
+  if (!r) return;
+  window.__rootFailsafe = setTimeout(function(){
+    r.style.transition = 'opacity 0.8s ease';
+    r.style.opacity = '0';
+    r.style.pointerEvents = 'none';
+    setTimeout(function(){ if (r.parentNode) r.remove(); }, 800);
+  }, 9000);
+})();
+</script>
 <script src="js/app.js" type="module"></script>
 </body>
 </html>
