@@ -1103,6 +1103,7 @@
   .wf-dot {
     width: 6px; height: 6px; border-radius: 50%; padding: 0;
     background: rgba(20,30,60,0.18); border: none; cursor: pointer;
+    flex-shrink: 0; -webkit-appearance: none; appearance: none;
     transition: background 0.25s ease, transform 0.25s ease;
   }
   .wf-dot.active { background: rgba(20,30,60,0.6); transform: scale(1.4); }
@@ -1271,6 +1272,17 @@
       flex-shrink: 0; flex-grow: 0;
       -webkit-appearance: none; appearance: none;
       border-radius: 50%; display: block;
+    }
+    #page-close {
+      padding-top: 10px;
+      margin-bottom: 24px;
+    }
+
+    /* Parallax breakout re-calibrated for 18px modal padding at ≤600px */
+    .parallax-wrap {
+      margin-left: -18px;
+      margin-right: -18px;
+      width: calc(100% + 36px);
     }
   }
 
@@ -1738,6 +1750,17 @@
     .parallax-wrap { aspect-ratio: 786.4 / 420; }
     .parallax-wrap .case-hero-img { position: static; width: 100%; height: 100%; inset: auto; transform: none; }
     .case-hero-slideshow { position: relative; width: 100%; height: 100%; inset: auto; transform: none; }
+
+    /* Full-width hero breakout (offsets 48px modal padding) */
+    .parallax-wrap {
+      margin-left: -48px;
+      margin-right: -48px;
+      width: calc(100% + 96px);
+      border-radius: 0;
+    }
+
+    /* Larger, non-stretched carousel dots */
+    .wf-dot { width: 10px; height: 10px; min-height: 0; }
   }
 
   /* ═══════════════════════════════════════
