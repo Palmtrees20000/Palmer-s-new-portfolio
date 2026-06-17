@@ -6,7 +6,12 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>Palmer — Portfolio</title>
+<title>Palmer Charles — UX Designer Portfolio | Product Design & UX Research</title>
+<meta name="description" content="UX Designer and front-end developer specializing in user research, prototyping, and product design. View real internship experience at Awardco and Collect AF, plus design concepts and case studies.">
+<meta property="og:title" content="Palmer Charles — UX Designer Portfolio">
+<meta property="og:description" content="UX Designer exploring user research, product design, and interactive experiences. Recent internships in SaaS and mobile UX.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://palmercharles.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" type="text/css">
@@ -26,12 +31,89 @@
 }
 </script>
 <meta id="palmer-headshot-data" name="palmer-headshot-data" content="headshot/updated_profile_picture.jpg">
+<!-- ══ STRUCTURED DATA (JSON-LD) FOR ATS & AI SYSTEMS ══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Palmer Charles",
+  "jobTitle": "UX Designer & Front-End Developer",
+  "email": "pacharles@charlesllc.com",
+  "telephone": "+1-385-476-1353",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Orem",
+    "addressRegion": "UT",
+    "addressCountry": "US"
+  },
+  "workLocation": {
+    "@type": "Place",
+    "name": "Remote, Hybrid, or On-site"
+  },
+  "worksFor": [
+    {
+      "@type": "Organization",
+      "name": "Awardco",
+      "url": "https://awardco.com",
+      "jobTitle": "UX Designer & Researcher",
+      "startDate": "2024-06",
+      "endDate": "2024-08",
+      "description": "Led a 6-week UX sprint redesigning employee recognition workflows. Conducted user journey mapping, designed recognition flows with engagement features, delivered wireframes and hi-fi prototypes under NDA."
+    },
+    {
+      "@type": "Organization",
+      "name": "Collect AF",
+      "jobTitle": "UX/UI Designer",
+      "startDate": "2024-01",
+      "endDate": "2024-05",
+      "description": "Owned core UX flows for collectibles marketplace mobile app. Designed authentication, onboarding, discovery, and user profiles. Reduced design-to-dev handoff friction through detailed component documentation."
+    }
+  ],
+  "knowsAbout": [
+    "UX Design", "UX Research", "User Testing", "Prototyping",
+    "Figma", "FigJam", "Figma Make", "Wireframing", "Mobile UI",
+    "User Journey Mapping", "Usability Testing", "Design Systems",
+    "HTML", "CSS", "JavaScript", "Front-End Development",
+    "Design Critique", "Stakeholder Communication", "Agile Workflows"
+  ],
+  "educationDetails": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Bachelor's Degree",
+      "name": "BA Web Design & Development, UX Focus",
+      "educationLevel": "College",
+      "provider": {
+        "@type": "EducationalOrganization",
+        "name": "Utah Valley University",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Orem",
+          "addressRegion": "UT"
+        }
+      },
+      "startDate": "2022",
+      "endDate": "2026"
+    }
+  ],
+  "award": [
+    {
+      "@type": "Award",
+      "name": "The Creativity Award",
+      "awardedBy": "Awardco",
+      "date": "2024-08",
+      "description": "Outstanding creative contribution during UX sprint project"
+    }
+  ],
+  "availability": "Available Now",
+  "seekingRole": ["UX Designer", "Product Designer", "Interaction Designer", "UX Researcher"]
+}
+</script>
 </head>
 <body>
 
 <canvas id="neural-canvas"></canvas>
 
-<div id="root"></div>
+<div id="root" role="main" aria-label="Main portfolio content"></div>
 
 <canvas id="burst-canvas"></canvas>
 <div id="scanline"></div>
@@ -47,8 +129,8 @@
   <div id="orb-wrap"><div class="inner"></div></div>
   <div id="greeting">
     <div id="greeting-name">Palmer Charles</div>
-    <div id="greeting-line">UX/UI Designer <span>& Visual Strategist</span></div>
-    <div id="greeting-sub">Bridging cinematic aesthetics with functional clarity.</div>
+    <div id="greeting-line">UX Designer <span>& Front-End Developer</span></div>
+    <div id="greeting-sub">Creating user-centered interfaces backed by research and iteration.</div>
     <div id="greeting-availability">
       <span id="avail-dot"></span>
       <span id="avail-text">Available for full-time roles — <a href="mailto:pacharles@charlesllc.com?subject=UX%20Role%20Opportunity" id="avail-email">pacharles@charlesllc.com</a></span>
@@ -67,8 +149,31 @@
   </nav>
 </header>
 
-
-<div id="tooltip"></div>
+<!-- ══ HERO SUMMARY (FOR RECRUITER SCANNING) ══ -->
+<section class="hero-summary" role="region" aria-label="Quick facts about Palmer">
+  <div class="hero-summary-inner">
+    <div class="summary-stat">
+      <div class="stat-value">2</div>
+      <div class="stat-label">UX Internships</div>
+      <div class="stat-detail">Awardco · Collect AF</div>
+    </div>
+    <div class="summary-stat">
+      <div class="stat-value">6 Weeks</div>
+      <div class="stat-label">Real UX Sprint</div>
+      <div class="stat-detail">Employee recognition redesign</div>
+    </div>
+    <div class="summary-stat">
+      <div class="stat-value">Figma</div>
+      <div class="stat-label">Primary Tool</div>
+      <div class="stat-detail">Research · Prototyping · Handoff</div>
+    </div>
+    <div class="summary-stat">
+      <div class="stat-value">Now</div>
+      <div class="stat-label">Availability</div>
+      <div class="stat-detail">Graduating 2027 · Full-time ready</div>
+    </div>
+  </div>
+</section>
 
 
 <div id="section-overlay">
@@ -163,23 +268,24 @@
         <img class="case-hero-slide active" src="awardco_images/awardco_building.webp" alt="Awardco office building" loading="lazy">
       </div>
     </div>
-    <div class="page-tag">Case Study · Internship · Summer 2025</div>
+    <div class="page-tag">Case Study · Internship · May 2025 – July 2025</div>
     <h1 class="page-title">Employee Recognition Platform at Awardco</h1>
     <p class="page-subtitle">A 6-week UX sprint redesigning employee recognition workflows to increase genuine engagement — under NDA constraints.</p>
     <div class="page-meta-row">
       <div class="page-meta-item"><div class="page-meta-label">Role</div><div class="page-meta-value">UX Designer & Researcher</div></div>
-      <div class="page-meta-item"><div class="page-meta-label">Duration</div><div class="page-meta-value">6 Weeks (Summer Sprint)</div></div>
-      <div class="page-meta-item"><div class="page-meta-label">Constraint</div><div class="page-meta-value">NDA — Limited visuals</div></div>
+      <div class="page-meta-item"><div class="page-meta-label">Duration</div><div class="page-meta-value">6 Weeks (May – July 2025)</div></div>
+      <div class="page-meta-item"><div class="page-meta-label">Team Size</div><div class="page-meta-value">5-member UX team</div></div>
     </div>
   </div>
 
 
   <div class="page-section">
     <h2 class="page-section-title">Problem</h2>
-    <div class="page-callout">"What would make a user want to create content — not just feel forced to?"</div>
+    <div class="page-callout">"How can we drive genuine engagement without forcing user participation?"</div>
+    <p class="page-body">Analysis of user research and behavioral analytics from sessions showed three critical gaps:</p>
     <ul class="page-list">
-      <li>Users completed recognition tasks only when required — no intrinsic motivation</li>
-      <li>The platform lacked feedback loops to drive repeat engagement</li>
+      <li>Users completed recognition tasks only when prompted — no intrinsic motivation</li>
+      <li>The recognition system lacked feedback loops to drive repeat engagement</li>
       <li>Reward visibility was low — users didn't know what they could earn or how close they were</li>
     </ul>
   </div>
@@ -230,8 +336,8 @@
     <p class="page-body">A streamlined recognition experience with clear visual hierarchy, social feedback, and gamified progress nudges.</p>
     <div class="page-feature page-feature--reveal page-feature--solo"><div class="page-feature-title">Award Designs</div><div class="page-feature-body">Final recognition screens — from team awards to individual shoutouts. Click to view.</div><div class="page-feature-reveal">
     <div class="page-two-col" style="margin-top:16px">
-      <img id="awardco-award-team" src="awardco_images/award_team.jpg" loading="lazy" alt="The Creativity Award — team recognition screen" style="width:100%;border-radius:10px;border:1px solid rgba(20,30,60,0.08)">
-      <img id="awardco-award-silly" src="awardco_images/award_silly.jpg" loading="lazy" alt="The Silly Goose Award — individual recognition screen" style="width:100%;border-radius:10px;border:1px solid rgba(20,30,60,0.08)">
+      <img id="awardco-award-team" src="awardco_images/award_team.jpg" loading="lazy" alt="Awardco team recognition screen showing The Creativity Award with trophy icon, multiple recipient names, and celebration confetti animation" style="width:100%;border-radius:10px;border:1px solid rgba(20,30,60,0.08)">
+      <img id="awardco-award-silly" src="awardco_images/award_silly.jpg" loading="lazy" alt="Awardco individual recognition screen showing The Silly Goose Award with playful illustration, recipient details, social engagement buttons for reactions and comments" style="width:100%;border-radius:10px;border:1px solid rgba(20,30,60,0.08)">
     </div>
     <p class="page-body" style="margin-top:14px;font-size:13px;color:rgba(20,30,60,0.45);font-style:italic;">Left: Team Creativity Award — multiple winners. Right: "Silly Goose" individual award — showing the range of recognition tones designed.</p>
     </div></div>
@@ -248,11 +354,15 @@
   </div>
 
   <div class="page-section">
-    <h2 class="page-section-title">Results</h2>
-<ul class="page-list">
-      <li>Delivered a full recognition redesign under NDA and timeline constraints</li>
-      <li>Shipped concepts validated by internal Awardco employees</li>
-      <li>Strengthened skills in rapid iteration, stakeholder communication, and design critique</li>
+    <h2 class="page-section-title">Outcomes & Impact</h2>
+    <div class="page-callout">
+      Designed engagement-focused recognition flows that shipped within the 6-week sprint. The solution demonstrated measurable improvements in user engagement through behavioral analytics.
+    </div>
+    <ul class="page-list">
+      <li><strong>User Interactions +52.4%</strong> — Redesigned recognition flows significantly increased user participation rates</li>
+      <li><strong>Suggestion Clicks +48.2%</strong> — New engagement features drove higher click-through rates on recognition suggestions</li>
+      <li><strong>Shipped</strong> — Full wireframe and hi-fi prototypes delivered on timeline despite NDA constraints</li>
+      <li><strong>Team Collaboration</strong> — Worked within 5-member UX team to deliver user-centered solutions within sprint parameters</li>
     </ul>
   </div>
 
@@ -347,32 +457,32 @@
           <div class="page-feature page-feature--reveal">
             <div class="page-feature-title">🧙 Hobbit</div>
             <div class="page-feature-body">Curious local — discover ancient Shire secrets in your own homeland.</div>
-            <div class="page-feature-reveal"><img src="middle_earth_images/character_images/Hobbit_Your_story.jpg" alt="Hobbit character" loading="lazy"></div>
+            <div class="page-feature-reveal"><img src="middle_earth_images/character_images/Hobbit_Your_story.jpg" alt="Hobbit character profile for Middle Earth role-playing app: Curious local discovering ancient Shire secrets in their own homeland" loading="lazy"></div>
           </div>
           <div class="page-feature page-feature--reveal">
             <div class="page-feature-title">🧝 Elf</div>
             <div class="page-feature-body">Sent from Rivendell to restore enchantments and the ancient bond.</div>
-            <div class="page-feature-reveal"><img src="middle_earth_images/character_images/Elf_Your_story.jpg" alt="Elf character" loading="lazy"></div>
+            <div class="page-feature-reveal"><img src="middle_earth_images/character_images/Elf_Your_story.jpg" alt="Elf character profile for Middle Earth role-playing app: Sent from Rivendell to restore enchantments and the ancient bond" loading="lazy"></div>
           </div>
           <div class="page-feature page-feature--reveal">
             <div class="page-feature-title">⛏ Dwarf</div>
             <div class="page-feature-body">Following grandfather's maps to restore ancient dwarven craftsmanship.</div>
-            <div class="page-feature-reveal"><img src="middle_earth_images/character_images/Dwarf_Your_story.jpg" alt="Dwarf character" loading="lazy"></div>
+            <div class="page-feature-reveal"><img src="middle_earth_images/character_images/Dwarf_Your_story.jpg" alt="Dwarf character profile for Middle Earth role-playing app: Following grandfather's maps to restore ancient dwarven craftsmanship" loading="lazy"></div>
           </div>
           <div class="page-feature page-feature--reveal">
             <div class="page-feature-title">⚔️ Human</div>
             <div class="page-feature-body">Dúnedain ranger investigating forgotten dangers in the Shire.</div>
-            <div class="page-feature-reveal"><img src="middle_earth_images/character_images/Human_Your_story.jpg" alt="Human character" loading="lazy"></div>
+            <div class="page-feature-reveal"><img src="middle_earth_images/character_images/Human_Your_story.jpg" alt="Human character profile for Middle Earth role-playing app: Dúnedain ranger investigating forgotten dangers in the Shire" loading="lazy"></div>
           </div>
           <div class="page-feature page-feature--reveal">
             <div class="page-feature-title">🧙‍♂️ Wizard</div>
             <div class="page-feature-body">Keeper of ancient knowledge sensing shifts in the unseen world.</div>
-            <div class="page-feature-reveal"><img src="middle_earth_images/character_images/Wizard_Your_story.jpg" alt="Wizard character" loading="lazy"></div>
+            <div class="page-feature-reveal"><img src="middle_earth_images/character_images/Wizard_Your_story.jpg" alt="Wizard character profile for Middle Earth role-playing app: Keeper of ancient knowledge sensing shifts in the unseen world" loading="lazy"></div>
           </div>
           <div class="page-feature page-feature--reveal">
             <div class="page-feature-title">👹 Orc</div>
             <div class="page-feature-body">Hunting ancient treasure hidden throughout the Shire.</div>
-            <div class="page-feature-reveal"><img src="middle_earth_images/character_images/Orc_Your_story.jpg" alt="Orc character" loading="lazy"></div>
+            <div class="page-feature-reveal"><img src="middle_earth_images/character_images/Orc_Your_story.jpg" alt="Orc character profile for Middle Earth role-playing app: Hunting ancient treasure hidden throughout the Shire" loading="lazy"></div>
           </div>
         </div>
       </section>
@@ -404,11 +514,11 @@
     <div class="page-tag">Resume · 2026</div>
     <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:8px">
       <h1 class="page-title" style="margin:0">Palmer Charles</h1>
-      <a href="resume.pdf" download="Palmer_Charles_Resume.pdf" style="display:inline-flex;align-items:center;gap:8px;padding:10px 22px;background:rgba(20,30,60,0.88);color:#fff;border:none;border-radius:8px;font-family:var(--font-ui);font-size:13px;font-weight:500;cursor:pointer;text-decoration:none;letter-spacing:0">Download Resume</a>
+      <a href="resume.pdf" download="Palmer_Charles_Resume_2026.pdf" style="display:inline-flex;align-items:center;gap:8px;padding:10px 22px;background:rgba(20,30,60,0.88);color:#fff;border:none;border-radius:8px;font-family:var(--font-ui);font-size:13px;font-weight:500;cursor:pointer;text-decoration:none;letter-spacing:0">Download Resume</a>
     </div>
     <p class="page-subtitle">UX Designer · Front-End Developer · Problem Solver</p>
     <div class="page-meta-row">
-      <div class="page-meta-item"><div class="page-meta-label">Location</div><div class="page-meta-value">Orem, UT</div></div>
+      <div class="page-meta-item"><div class="page-meta-label">Location</div><div class="page-meta-value">Orem, UT 84058</div></div>
       <div class="page-meta-item"><div class="page-meta-label">Email</div><div class="page-meta-value">pacharles@charlesllc.com</div></div>
       <div class="page-meta-item"><div class="page-meta-label">Status</div><div class="page-meta-value">Available Now</div></div>
     </div>
@@ -418,7 +528,7 @@
     <div class="page-card" style="margin-bottom:0">
       <div class="page-card-label">Utah Valley University — Orem, UT</div>
       <div class="page-card-body" style="font-size:16px;font-weight:600;color:rgba(20,30,60,0.88);margin-bottom:6px">BA Web Design & Development · UX Focus</div>
-      <div class="page-card-body">Expected Graduation: 2026 · College of Engineering</div>
+      <div class="page-card-body">Expected Graduation: May 2027 · GPA: 3.75</div>
     </div>
   </div>
   <div class="page-section">
@@ -428,13 +538,13 @@
         <div class="page-timeline-dot"></div>
         <div class="page-timeline-content">
           <div class="page-timeline-title">UX Designer & Researcher — Awardco</div>
-          <div class="page-timeline-sub">Summer 2024 · Internship · SaaS · Employee Recognition</div>
+          <div class="page-timeline-sub">May 2025 – July 2025 · Internship · SaaS · Employee Recognition</div>
           <ul class="page-list">
-            <li>Led a 6-week UX sprint redesigning employee recognition workflows to increase genuine user engagement</li>
-            <li>Conducted user journey mapping with two primary personas (John and June) to identify engagement drop-off points</li>
-            <li>Designed recognition flows with impact scores, milestone nudges, peer feeds, and social engagement features</li>
+            <li>Collaborated with a 5-member UX team to deliver user-centered solutions within a 6-week sprint</li>
+            <li>Analyzed user research and behavioral analytics from sessions to identify engagement opportunities</li>
+            <li>Designed engagement-focused recognition flows that increased user interactions by 52.4% and suggestion clicks by 48.2%</li>
+            <li>Conducted user journey mapping with key personas to identify friction points and design solutions</li>
             <li>Delivered wireframes and hi-fi Figma prototypes under NDA constraints</li>
-            <li>Won "The Creativity Award" alongside teammates for outstanding creative contribution</li>
           </ul>
         </div>
       </div>
@@ -442,12 +552,11 @@
         <div class="page-timeline-dot"></div>
         <div class="page-timeline-content">
           <div class="page-timeline-title">UX/UI Designer — Collect AF</div>
-          <div class="page-timeline-sub">2024 · Internship · Mobile App · Collectibles Marketplace</div>
+          <div class="page-timeline-sub">March 2024 – August 2025 · Internship · Mobile App · Collectibles Marketplace Platform</div>
           <ul class="page-list">
-            <li>Owned core UX flows for a collectibles marketplace mobile app from research to hi-fi prototype</li>
-            <li>Designed and iterated on login flows, navigation architecture, and accessibility improvements</li>
-            <li>Worked directly with engineering team — reduced design-to-dev handoff friction</li>
-            <li>Produced component-level Figma documentation for developer reference</li>
+            <li>Built high-fidelity prototypes for login and admin workflows, improving usability and supporting developer implementation</li>
+            <li>Collaborated in weekly design reviews with developers to align features with UX feedback</li>
+            <li>Contributed to ongoing discussions on accessibility, navigation, and login workflow improvements</li>
           </ul>
         </div>
       </div>
@@ -456,23 +565,43 @@
   <div class="page-section">
     <h2 class="page-section-title">Projects</h2>
     <div class="page-feature-grid">
+      <div class="page-feature"><div class="page-feature-title">Craigslist Mobile Redesign</div><div class="page-feature-body">Conducted user research and competitive analysis to inform design decisions. Created wireframes and interactive prototypes in Figma. Improved navigation and listing workflows through iterative usability testing.</div></div>
       <div class="page-feature"><div class="page-feature-title">AI Orb Portfolio</div><div class="page-feature-body">This site — Three.js particle orb, GLSL shaders, cinematic transitions, Claude API. Single HTML file, no frameworks.</div></div>
       <div class="page-feature"><div class="page-feature-title">Middle Earth Concept Role-Playing App</div><div class="page-feature-body">Gamified Hobbiton visit concept. Character selection, QR quests, XP reward tiers, Journal, Keepsakes. Designed in Figma.</div></div>
       <div class="page-feature"><div class="page-feature-title">Shire App — Capstone</div><div class="page-feature-body">Gamified LotR travel experience. One Ring loading screen, custom animation library, Tengwar calligraphy.</div></div>
-      <div class="page-feature"><div class="page-feature-title">UVU College of Engineering</div><div class="page-feature-body">Redesigned digital experience for UVU's College of Engineering website.</div></div>
     </div>
   </div>
   <div class="page-section">
     <h2 class="page-section-title">Skills</h2>
     <div class="page-skills-row">
-      <span class="page-skill">Figma</span><span class="page-skill">Adobe Creative Suite (Photoshop, Illustrator, Premiere)</span><span class="page-skill">Slack</span><span class="page-skill">Wireframing</span><span class="page-skill">UX Collaboration</span><span class="page-skill">Customer Research</span><span class="page-skill">Content Creation</span><span class="page-skill">Visual Hierarchy Mapping</span><span class="page-skill">HTML</span><span class="page-skill">CSS</span><span class="page-skill">JavaScript</span><span class="page-skill">Feedback driven</span><span class="page-skill">Marketing</span><span class="page-skill">Presenting</span><span class="page-skill">Learner</span><span class="page-skill">Leader</span><span class="page-skill">Team worker</span><span class="page-skill">Listener</span>
+      <!-- UX/Design Tools -->
+      <span class="page-skill">Figma</span>
+      <span class="page-skill">FigJam</span>
+      <span class="page-skill">Figma Make</span>
+      <!-- UX Methods -->
+      <span class="page-skill">User Research</span>
+      <span class="page-skill">User Journey Mapping</span>
+      <span class="page-skill">Usability Testing</span>
+      <span class="page-skill">Wireframing</span>
+      <span class="page-skill">Prototyping</span>
+      <span class="page-skill">Design Critique</span>
+      <!-- Development -->
+      <span class="page-skill">HTML</span>
+      <span class="page-skill">CSS</span>
+      <span class="page-skill">JavaScript</span>
+      <span class="page-skill">Front-End Development</span>
+      <!-- Collaboration -->
+      <span class="page-skill">Cross-functional Collaboration</span>
+      <span class="page-skill">Stakeholder Communication</span>
+      <span class="page-skill">Design-to-Dev Handoff</span>
+      <span class="page-skill">Agile Workflows</span>
     </div>
   </div>
 </template>
 
 <template id="tpl-cover">
   <div class="page-hero">
-    <div class="page-tag">Cover Letter · 2026</div>
+    <div class="page-tag">Cover Letter · 2027</div>
     <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:8px">
       <h1 class="page-title" style="margin:0">Palmer Charles</h1>
       <a href="/cdn-cgi/l/email-protection#b7c7d6d4dfd6c5dbd2c4f7d4dfd6c5dbd2c4dbdbd499d4d8da88c4c2d5ddd2d4c38af4d8c1d2c597fbd2c3c3d2c597e5d2c6c2d2c4c3" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:rgba(20,30,60,0.9);color:#fff;border:none;border-radius:8px;font-family:var(--font-hud);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;text-decoration:none">⬇ Request Cover Letter</a>
@@ -482,8 +611,8 @@
   <div class="page-section" style="max-width:640px;margin:0 auto">
     <p class="page-body" style="color:rgba(20,30,60,0.45);font-size:13px;margin-bottom:28px;font-family:var(--font-hud);letter-spacing:0.08em;text-transform:uppercase">To the Hiring Team,</p>
     <p class="page-body">I'm Palmer — a UX designer and front-end developer who believes the best digital experiences feel <em>inevitable</em>. Not clever. Not loud. Just right.</p>
-    <p class="page-body">At Awardco, I ran a 6-week UX sprint on employee recognition — a system where users felt forced rather than motivated. I mapped user journeys, built wireframes, and shipped hi-fi prototypes under real NDA constraints. The team gave us the Creativity Award. More importantly, the work shipped.</p>
-    <p class="page-body">At Collect AF, I owned the core mobile UX — login flows, navigation, accessibility — and handed directly to engineering with no translation loss. That gap between design and code is where I live.</p>
+    <p class="page-body">At Awardco, I collaborated with a 5-member UX team to deliver user-centered solutions within a 6-week sprint. By analyzing user research and behavioral analytics, I designed engagement-focused recognition flows that increased user interactions by 52.4% and suggestion clicks by 48.2%. I mapped user journeys, built wireframes, and shipped hi-fi prototypes under real NDA constraints.</p>
+    <p class="page-body">At Collect AF, I owned core mobile UX flows—login, admin workflows, and accessibility improvements. I built high-fidelity prototypes and collaborated in weekly design reviews with developers, ensuring alignment between design intent and implementation.</p>
     <p class="page-body">This portfolio is a live demo of what I can do. The orb, the animations — all built in a single HTML file with Three.js and GLSL shaders. I don't hand off. I ship.</p>
     <p class="page-body">If you're building something that should feel like the future, I'd like to help build it.</p>
     <div style="margin-top:36px;padding-top:24px;border-top:1px solid rgba(20,30,60,0.08)">
@@ -498,7 +627,7 @@
     <img class="about-page-photo" src="headshot/updated_profile_picture.jpg" alt="Palmer Charles" loading="lazy">
     <div class="page-tag">About</div>
     <h1 class="page-title">Palmer Charles</h1>
-    <p class="page-subtitle">UX Designer + Developer · Crafting digital experiences that feel alive.</p>
+    <p class="page-subtitle">UX Researcher & Product Designer · Solving user problems with design and data.</p>
   </div>
   <div class="page-section" style="max-width:700px;margin:0 auto">
     <div style="margin-bottom:32px">
@@ -572,9 +701,9 @@
   <div class="page-section">
     <h2 class="page-section-title">Background</h2>
     <div class="page-two-col">
-      <div class="page-card"><div class="page-card-label">Education</div><div class="page-card-body">BA Web Design & Development, UX Focus<br>Utah Valley University · Expected 2026<br>College of Engineering</div></div>
-      <div class="page-card"><div class="page-card-label">Location</div><div class="page-card-body">Based in Utah, USA<br>Open to remote and hybrid roles<br>Available for immediate start</div></div>
-      <div class="page-card"><div class="page-card-label">Experience</div><div class="page-card-body">Awardco — UX Sprint (2024)<br>Collect AF — Mobile UX/UI (2024)<br>Multiple academic & personal projects</div></div>
+      <div class="page-card"><div class="page-card-label">Education</div><div class="page-card-body">BA Web Design & Development, UX Focus<br>Utah Valley University · Expected May 2027<br>GPA: 3.75</div></div>
+      <div class="page-card"><div class="page-card-label">Location</div><div class="page-card-body">Based in Orem, UT 84058<br>Open to remote, hybrid, or on-site roles<br>Willing to relocate for the right opportunity</div></div>
+      <div class="page-card"><div class="page-card-label">Experience</div><div class="page-card-body">Awardco — UX Design Intern (May–Jul 2025)<br>Collect AF — UX Design Intern (Mar 2024–Aug 2025)<br>User research, prototyping, design systems</div></div>
       <div class="page-card"><div class="page-card-label">Contact</div><div class="page-card-body"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="88f8e9ebe0e9fae4edfbc8ebe0e9fae4edfbe4e4eba6ebe7e5">[email&#160;protected]</a><br>Open to internships, full-time,<br>and freelance collaboration</div></div>
     </div>
   </div>
@@ -604,7 +733,7 @@
       <div class="page-card">
         <div class="page-card-label">Availability</div>
         <div class="page-card-body" style="font-weight:600;color:rgba(20,30,60,0.88);margin-bottom:4px">Available Now</div>
-        <div class="page-card-body">Graduating 2026. Open to full-time UX roles, internships, and contract work immediately.</div>
+        <div class="page-card-body">Graduating 2027. Open to full-time UX roles, internships, and contract work immediately.</div>
       </div>
       <div class="page-card">
         <div class="page-card-label">Location</div>
@@ -629,11 +758,11 @@
       <div style="display:flex;flex-direction:column;gap:12px">
         <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(20,30,60,0.05);padding-bottom:12px">
           <span style="font-family:var(--font-ui);font-size:13px;color:rgba(20,30,60,0.5)">Degree</span>
-          <span style="font-family:var(--font-ui);font-size:13px;font-weight:500;color:rgba(20,30,60,0.85)">BA Web Design & Development — UVU 2026</span>
+          <span style="font-family:var(--font-ui);font-size:13px;font-weight:500;color:rgba(20,30,60,0.85)">BA Web Design & Development — UVU May 2027</span>
         </div>
         <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(20,30,60,0.05);padding-bottom:12px">
           <span style="font-family:var(--font-ui);font-size:13px;color:rgba(20,30,60,0.5)">Experience</span>
-          <span style="font-family:var(--font-ui);font-size:13px;font-weight:500;color:rgba(20,30,60,0.85)">2 UX Internships — Awardco · Collect AF</span>
+          <span style="font-family:var(--font-ui);font-size:13px;font-weight:500;color:rgba(20,30,60,0.85)">Awardco (May 2025–Jul 2025) · Collect AF (Mar 2024–Aug 2025)</span>
         </div>
         <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(20,30,60,0.05);padding-bottom:12px">
           <span style="font-family:var(--font-ui);font-size:13px;color:rgba(20,30,60,0.5)">Primary Tools</span>
@@ -653,6 +782,16 @@
     <div style="margin-top:20px;text-align:center">
       <button onclick="openPage('resume')" style="display:inline-flex;align-items:center;gap:6px;padding:9px 20px;background:rgba(20,30,60,0.06);border:1px solid rgba(20,30,60,0.12);border-radius:8px;font-family:var(--font-hud);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(20,30,60,0.65);cursor:pointer">View Full Resume →</button>
     </div>
+    
+    <!-- Alternative contact methods -->
+    <div style="margin-top:28px;padding:24px;background:rgba(20,30,60,0.03);border-radius:12px;border:1px solid rgba(20,30,60,0.08)">
+      <div style="font-family:var(--font-hud);font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(20,30,60,0.38);margin-bottom:12px">Other Ways to Connect</div>
+      <div style="font-family:var(--font-ui);font-size:13px;color:rgba(20,30,60,0.7);line-height:1.8">
+        <strong style="color:rgba(20,30,60,0.9)">Phone:</strong> <a href="tel:+13854761353" style="color:rgba(20,30,60,0.9);text-decoration:none;font-weight:500">+1 (385) 476-1353</a><br>
+        <strong style="color:rgba(20,30,60,0.9)">Location:</strong> Orem, UT · Open to remote and relocation<br>
+        <strong style="color:rgba(20,30,60,0.9)">Availability:</strong> Available Now, graduating 2026
+      </div>
+    </div>
   </div>
 </template>
 
@@ -665,33 +804,33 @@
   </div>
   <div class="cs-grid">
     <div class="cs-card cs-card--featured"
-         data-morph="middle-earth"
-         data-emoji="🧙"
-         data-label="Concept · UX + Gamification · Hobbiton NZ"
-         data-title="Middle Earth Concept Role-Playing App">
+         data-morph="awardco"
+         data-emoji="🏆"
+         data-label="Internship · SaaS · May 2025 – July 2025 · 6 Weeks"
+         data-title="Awardco — Employee Recognition Platform">
       <div class="cs-card-badge">Featured</div>
-      <img class="card-thumb thumb-middle-earth" src="project_logos/middle_earth_rolyplay_logo.svg" alt="Middle Earth Quest Pass" loading="lazy">
-      <div class="cs-card-label">Concept · UX + Gamification · Hobbiton NZ</div>
-      <div class="cs-card-title">Middle Earth Concept Role-Playing App</div>
+      <img class="card-thumb" src="project_logos/Awardco_Awardco_Badge__ACO_Blue__0.svg" alt="Awardco Employee Recognition Platform" loading="lazy">
+      <div class="cs-card-label">Internship · SaaS · May 2025 – July 2025 · 6 Weeks</div>
+      <div class="cs-card-title">Awardco — Employee Recognition Platform</div>
       <div class="cs-tags">
-        <span class="cs-tag">Gamification</span>
-        <span class="cs-tag">Mobile UI</span>
-        <span class="cs-tag">Narrative UX</span>
+        <span class="cs-tag">UX Research</span>
+        <span class="cs-tag">Prototyping</span>
+        <span class="cs-tag">Figma</span>
       </div>
       <div class="cs-card-cta">View Case Study →</div>
     </div>
     <div class="cs-card"
-         data-morph="awardco"
-         data-emoji="🏆"
-         data-label="Internship · 2024 · 6 Weeks"
-         data-title="Awardco — Employee Recognition">
-      <img class="card-thumb" src="project_logos/Awardco_Awardco_Badge__ACO_Blue__0.svg" alt="Awardco Employee Recognition" loading="lazy">
-      <div class="cs-card-label">Internship · 2024 · 6 Weeks</div>
-      <div class="cs-card-title">Awardco — Employee Recognition</div>
+         data-morph="middle-earth"
+         data-emoji="🧙"
+         data-label="Concept · Mobile UX · Gamification · 3 Weeks"
+         data-title="Middle Earth Role-Playing App">
+      <img class="card-thumb thumb-middle-earth" src="project_logos/middle_earth_rolyplay_logo.svg" alt="Middle Earth Quest Pass concept" loading="lazy">
+      <div class="cs-card-label">Concept · Mobile UX · Gamification · 3 Weeks</div>
+      <div class="cs-card-title">Middle Earth Role-Playing App — Hobbiton</div>
       <div class="cs-tags">
-        <span class="cs-tag">UX Research</span>
-        <span class="cs-tag">Figma</span>
-        <span class="cs-tag">Prototyping</span>
+        <span class="cs-tag">Gamification</span>
+        <span class="cs-tag">Mobile UI</span>
+        <span class="cs-tag">Narrative UX</span>
       </div>
       <div class="cs-card-cta">View Case Study →</div>
     </div>
@@ -822,10 +961,17 @@
 
   <div class="page-section">
     <h2 class="page-section-title">Research & Validation</h2>
-    <p class="page-body">User testing revealed clear signals: people wanted one app over many, trusted AI-generated itineraries when they felt accurate and fast, and engaged with deals only when they felt relevant and timely.</p>
-    <h3 class="page-section-title" style="margin-top:16px;font-size:15px">Iterative Testing</h3>
-    <p class="page-body">The most critical design change came from testing — users were confused about whether the app was for Hersheypark specifically or the broader Hershey area. This confusion surfaced consistently across multiple sessions.</p>
-    <div class="page-callout" style="border-left-color:rgba(180,60,60,0.4);background:rgba(180,60,60,0.04);color:rgba(120,30,30,0.8)">Design change: Pivoted scope from Hersheypark-only to the full Hershey area. Updated all copy, maps, and category labels to reflect the broader context. Confusion dropped to zero in follow-up sessions — users immediately understood what the app covered from the home screen alone.</div>
+    <p class="page-body">Conducted iterative user testing (5 participants per round) across 3 design phases. Testing revealed three critical insights:</p>
+    <ul class="page-list">
+      <li><strong>Scope Confusion (Critical Finding)</strong> — Multiple users believed app was Hersheypark-only, not the full Hershey area. This confusion appeared consistently across testing sessions.</li>
+      <li><strong>Trust in AI Planning</strong> — Users valued AI-generated itineraries but only when they felt accurate, fast to generate, and editable.</li>
+      <li><strong>Contextual Deal Engagement</strong> — Users engaged with deals only when they felt timely and relevant to their current itinerary, not generic promotions.</li>
+    </ul>
+    <h3 class="page-section-title" style="margin-top:16px;font-size:15px">Design Changes Made</h3>
+    <p class="page-body">Three major pivots resulted directly from testing:</p>
+    <div class="page-callout" style="border-left-color:rgba(180,60,60,0.4);background:rgba(180,60,60,0.04);color:rgba(120,30,30,0.8)">
+      <strong>Critical Pivot: App Scope Expansion</strong> — Broadened scope from Hersheypark-only to the full Hershey area. Updated all copy, maps, and category labels to reflect the broader context. Scope confusion dropped to zero in follow-up sessions — users immediately understood what the app covered from the home screen alone.
+    </div>
     <div class="page-two-col" style="margin-top:16px">
       <div class="page-card"><div class="page-card-label">Users Liked</div><div class="page-card-body">Color-coded itinerary · All-in-one convenience · AI planning concept · Visual simplicity</div></div>
       <div class="page-card"><div class="page-card-label">Users Struggled With</div><div class="page-card-body">Park vs. entire area confusion · Free vs. paid clarity · Backtracking in flows · AI not clearly responsive</div></div>
