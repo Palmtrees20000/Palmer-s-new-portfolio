@@ -1856,10 +1856,26 @@
     #morph-card-content::-webkit-scrollbar,
     #page-modal::-webkit-scrollbar { display: none; }
 
+    .hero-summary { display: none !important; }
+
+    .main-header {
+      top: 46%;
+      transform: translateX(-50%);
+      width: 100%;
+      padding: 0 16px;
+    }
+
+    #greeting {
+      width: 100%;
+      max-width: 480px;
+      padding: 0;
+      margin: 0;
+    }
+
     #greeting-name { color: rgba(20,30,60,0.45); text-shadow: none; }
-    #greeting-line { color: rgba(20,30,60,1); }
-    #greeting-line span { color: rgba(20,30,60,0.65); }
-    #greeting-sub  { color: rgba(20,30,60,0.6); }
+    #greeting-line { color: rgba(20,30,60,1); font-size: 28px; line-height: 1.1; }
+    #greeting-line span { color: rgba(20,30,60,0.65); font-size: 28px; }
+    #greeting-sub  { color: rgba(20,30,60,0.6); font-size: 13px; margin-top: 8px; }
     #avail-text    { color: rgba(20,30,60,0.85); }
     #avail-email   { color: rgba(170,200,255,0.80); }
   }
