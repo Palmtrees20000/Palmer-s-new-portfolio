@@ -890,7 +890,7 @@ function animate(){
   const orbSt = window._orbState || { hoverBoost: 1.0, morphOpen: false };
   const targetScale    = orbSt.morphOpen ? 0.35 : 0.55;
   const isMobileView   = window.innerWidth <= 768;
-  const targetOffsetY  = orbSt.morphOpen ? 1.5 : (isMobileView ? 2.1 : 5.0);
+  const targetOffsetY  = orbSt.morphOpen ? 1.5 : (isMobileView ? 3.8 : 5.0);
   const stateSpeedMult = orbSt.morphOpen ? 0.25 : orbSt.hoverBoost;
   const stateBloomTarget = themes[currentTheme]?.bloom.strength ?? themes['darkspace'].bloom.strength;
 
