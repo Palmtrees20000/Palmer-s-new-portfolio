@@ -613,9 +613,12 @@
     #status-bar { display: none; }
     #section-overlay { display: none; }
 
-    .main-header { top: 58%; transform: translateX(-50%); }
+    .main-header { top: 50%; transform: translate(-50%, -50%); }
     #greeting {
-      width: 90vw;
+      width: min(90vw, 460px);
+      max-width: 460px;
+      padding: 0 16px;
+      margin: 0 auto;
       white-space: normal;
       text-align: center;
     }
@@ -1899,8 +1902,8 @@
   /* ── Mobile nav alignment fix ≤768px ── */
   @media (max-width: 768px) {
     .main-header {
-      top: 52%;
-      transform: translateX(-50%);
+      top: 50%;
+      transform: translate(-50%, -50%);
       z-index: 60;
       align-items: center;
     }
