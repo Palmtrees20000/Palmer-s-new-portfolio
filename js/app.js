@@ -619,9 +619,9 @@ const themes = {
 
 let currentSpeed=1.0, targetSpeed=1.0;
 const PULSE_COLORS=[
-  new THREE.Vector3(0.78,0.78,0.78),new THREE.Vector3(0.88,0.88,0.88),
-  new THREE.Vector3(0.70,0.70,0.70),new THREE.Vector3(0.82,0.82,0.82),
-  new THREE.Vector3(0.75,0.75,0.75),
+  new THREE.Vector3(0.16,0.16,0.16),new THREE.Vector3(0.18,0.18,0.18),
+  new THREE.Vector3(0.14,0.14,0.14),new THREE.Vector3(0.17,0.17,0.17),
+  new THREE.Vector3(0.15,0.15,0.15),
 ];
 let pulseIdx=0, pulsePhase=0;
 
@@ -684,7 +684,7 @@ float rand(vec2 co){return fract(sin(dot(co.xy,vec2(12.9898,78.233)))*43758.5453
 void main(){
   vec2 cxy=2.*gl_PointCoord-1.;float r=dot(cxy,cxy);if(r>1.)discard;
   float glow=exp(-r*3.5)+vMouseEffect*.2;float twinkle=rand(gl_PointCoord+time)*.08+.92;
-  vec3 mixed=mix(vec3(0.0),vec3(1.0),vFresnel);
+  vec3 mixed=mix(vColor,vec3(1.0),vFresnel*0.08);
   mixed=mix(mixed,vColor,0.12);
   mixed=mix(mixed,vec3(uPulseColor),uPulseAmt*.10);
   mixed=clamp(mixed,0.,1.);
