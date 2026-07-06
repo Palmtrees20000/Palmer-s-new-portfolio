@@ -1794,6 +1794,22 @@
      MOBILE OVERHAUL  ≤ 768px
   ═══════════════════════════════════════ */
   @media (max-width: 768px) {
+    html, body {
+      min-height: 100%;
+    }
+    body {
+      min-height: 100svh;
+      min-height: 100dvh;
+    }
+
+    canvas,
+    #orb-canvas,
+    #burst-canvas,
+    #neural-canvas {
+      height: 100svh !important;
+      height: 100dvh !important;
+    }
+
     /* Show hamburger */
     #hamburger-btn   { display: flex !important; }
     #bottom-nav      { display: none !important; }
